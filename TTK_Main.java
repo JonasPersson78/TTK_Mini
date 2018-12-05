@@ -1,6 +1,51 @@
-public class TTK_Main;{
-  public static main(String[] args){
+public class TTK_Main{
+  static String currentUser = "";
 
+  private static Scanner scan = new Scanner(System.in);
+  public static void main (String[] args) {
+
+  int menuOption = 0;
+  boolean loggedIn = false;
+
+
+  boolean loopAgain = true;
+  while(loopAgain) {
+      menuOption = 0;
+      printMenu();
+      while(!(menuOption == 1 || menuOption == 2 || menuOption == 3)) {
+      System.out.print("Select your option: ");
+      menuOption = scanInt();
+    }
+    if (menuOption == 1) {
+      tryCreateUser();
+    } else if (menuOption == 2) {
+      loggedIn = tryLoginUser();
+      if (!loggedIn) {
+        System.out.println("Wrong username and/or password!");
+      }
+    } else if (menuOption == 3) {
+      loopAgain = false;
+    } else {
+      System.out.println("Fundamental error!");
+    }
+    if (loggedIn) {
+      menuOption = 0;
+      System.out.println("Welcome " + currentUser + "!");
+      printLoggedInMenu();
+      while(menuOption != 1) {
+        System.out.print("Select your option: ");
+        menuOption = scanInt();
+      }
+      System.out.println("Bye " + currentUser + "!");
+      currentUser = "";
+      loggedIn = false;
+    }
+  }
+  scan.close();
+  }
+
+  private static void printLoggedInMenu() {
+    System.out.println("1. Logout");
   }
 
   private static void tryCreateUser() {
