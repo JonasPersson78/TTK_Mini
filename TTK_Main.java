@@ -48,7 +48,6 @@ public class TTK_Main{
     System.out.println("1. Logout");
   }
 
-
   private static void tryCreateUser() {
     boolean success = false;
     TTK_Create create = new TTK_Create();
