@@ -5,7 +5,7 @@ public class TTK_Create {
   private boolean usernameIsValid;
   private boolean passwordIsValid;
 
-  public MTTK_Create() {
+  public TTK_Create() {
     tempUsername = "";
     tempPassword = "";
     usernameIsValid = false;

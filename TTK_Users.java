@@ -18,8 +18,8 @@ public class TTK_Users {
 
   public static int indexOfUser(String username) {
   int index;
-  for (index = 0; index < usersList.size(); index++) {
-    if (usersList.get(index).username.equals(username)) {
+  for (index = 0; index < userList.size(); index++) {
+    if (userList.get(index).username.equals(username)) {
       break;
     }
   }
@@ -29,8 +29,8 @@ return index;
 public static String passwordOfUser(String username) {
   int index = indexOfUser(username);
   String password = "-1";
-  if (index < usersList.size()) {
-    password = usersList.get(index).password;
+  if (index < userList.size()) {
+    password = userList.get(index).password;
   }
   return password;
   }
