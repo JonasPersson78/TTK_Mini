@@ -15,3 +15,23 @@ public class TTK_Users {
     TTK_Users newUser = new TTK_Users(inputUsername, inputPassword);
     userList.add(newUser);
   }
+
+  public static int indexOfUser(String username) {
+  int index;
+  for (index = 0; index < usersList.size(); index++) {
+    if (usersList.get(index).username.equals(username)) {
+      break;
+    }
+  }
+return index;
+}
+
+public static String passwordOfUser(String username) {
+  int index = indexOfUser(username);
+  String password = "-1";
+  if (index < usersList.size()) {
+    password = usersList.get(index).password;
+  }
+  return password;
+  }
+}
