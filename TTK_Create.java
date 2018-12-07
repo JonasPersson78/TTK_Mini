@@ -1,9 +1,8 @@
 public class TTK_Create {
-  private String tempUsername;
-  private String tempPassword;
-
-  private boolean usernameIsValid;
-  private boolean passwordIsValid;
+  public String tempUsername;
+  public String tempPassword;
+  public boolean usernameIsValid;
+  public boolean passwordIsValid;
 
   public TTK_Create() {
     tempUsername = "";
