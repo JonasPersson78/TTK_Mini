@@ -1,5 +1,4 @@
-import java.util.Scanner;
-import java.util.InputMismatchException;
+import java.util.*;
 
 public class TTK_Main{
   public static String currentUser = "";
