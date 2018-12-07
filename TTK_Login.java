@@ -1,6 +1,6 @@
 public class TTK_Login{
-  private String tempUsername;
-  private boolean usernameIsValid;
+  public String tempUsername;
+  public boolean usernameIsValid;
 
   public TTK_Login() {
     tempUsername = "";
@@ -22,5 +22,5 @@ public class TTK_Login{
     }
     return false;
   }
-  
+
 }
