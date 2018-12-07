@@ -6,10 +6,10 @@ public class TTK_Main{
   public static Scanner scan = new Scanner(System.in);
 
   public static void main (String[] args) {
-  public int menuOption = 0;
-  public boolean loggedIn = false;
+    int menuOption = 0;
+    boolean loggedIn = false;
+    boolean loopAgain = true;
 
-  boolean loopAgain = true;
   while(loopAgain) {
       menuOption = 0;
       printMenu();
