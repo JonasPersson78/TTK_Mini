@@ -10,6 +10,10 @@ public class TTK_Users {
     password = inputPassword;
   }
 
+  public static void setStateEmptyUserList() {
+    userList.clear();
+  }
+
   public static void addTTK_User(String inputUsername, String inputPassword) {
     TTK_Users newUser = new TTK_Users(inputUsername, inputPassword);
     userList.add(newUser);
