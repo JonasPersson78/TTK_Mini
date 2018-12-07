@@ -2,14 +2,12 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 public class TTK_Main{
-  static String currentUser = "";
+  public static String currentUser = "";
+  public static Scanner scan = new Scanner(System.in);
 
-  private static Scanner scan = new Scanner(System.in);
   public static void main (String[] args) {
-
-  int menuOption = 0;
-  boolean loggedIn = false;
-
+  public int menuOption = 0;
+  public boolean loggedIn = false;
 
   boolean loopAgain = true;
   while(loopAgain) {
