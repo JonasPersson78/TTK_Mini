@@ -1,16 +1,14 @@
 import java.util.*;
 
 public class TTK_Main{
-  static String currentUser = "";
+  public static String currentUser = "";
+  public static Scanner scan = new Scanner(System.in);
 
-  private static Scanner scan = new Scanner(System.in);
   public static void main (String[] args) {
+    int menuOption = 0;
+    boolean loggedIn = false;
+    boolean loopAgain = true;
 
-  int menuOption = 0;
-  boolean loggedIn = false;
-
-
-  boolean loopAgain = true;
   while(loopAgain) {
       menuOption = 0;
       printMenu();
